@@ -9,4 +9,13 @@ var cardFour = "king";
 	window.alert("You got a match!");
 }	else {
 	window.alert("no match, try again.");
-}
+};
+
+function createBoard() {
+  for (x = 0; x < 4; x++) {
+      var board = document.createElement("div");
+      board.className = "card";
+      document.getElementById("game-board").appendChild(board);
+    }
+};
+creatBoard();
